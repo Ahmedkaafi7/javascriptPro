@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HornFix - Mobile Repair</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+<div id="loader">HornFix Loading...</div>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">HornFix</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="header-actions">
+      <button id="darkToggle"><i class="fas fa-moon"></i></button>
+      <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </div>
+    
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <h1>Fast & Reliable Mobile Repair</h1>
+  <p>Professional phone repair services you can trust.</p>
+  <div class="hero-buttons">
+    <a href="#contact" class="btn primary">Book Repair</a>
+    <a href="#services" class="btn outline">View Services</a>
+  </div>
+</section>
+
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+
+    <div class="card">
+      <i class="fas fa-mobile-screen"></i>
+      <h3>Screen Repair / Replacement</h3>
+      <p>Broken or cracked screen repair and replacement service.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-charging-station"></i>
+      <h3>Charging Port Repair</h3>
+      <p>Damaged charging port repair or replacement.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-battery-full"></i>
+      <h3>Battery Replacement</h3>
+      <p>Fast and reliable damaged battery replacement.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-microphone"></i>
+      <h3>Microphone / Speaker Repair</h3>
+      <p>Fix microphone or phone speaker issues.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-camera"></i>
+      <h3>Camera Repair</h3>
+      <p>Front and back phone camera repair service.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-water"></i>
+      <h3>Water Damage Repair</h3>
+      <p>Complete internal cleaning and repair after water damage.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-stethoscope"></i>
+      <h3>Diagnostic Services</h3>
+      <p>Full device check and professional diagnostics.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-unlock"></i>
+      <h3>Phone Unlocking</h3>
+      <p>Secure and safe network unlocking service.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-laptop-code"></i>
+      <h3>Software Installation</h3>
+      <p>Software installation and bug fixes.</p>
+    </div>
+
+    <div class="card">
+      <i class="fas fa-database"></i>
+      <h3>Data Recovery</h3>
+      <p>Recover lost data safely and professionally.</p>
+    </div>
+
+  </div>
+</section>
+
+<section class="counter-section">
+  <div class="counter-box">
+    <h2 class="counter" data-target="1000">0</h2>
+    <p>Repairs</p>
+  </div>
+  <div class="counter-box">
+    <h2 class="counter" data-target="500">0</h2>
+    <p>Happy Clients</p>
+  </div>
+  <div class="counter-box">
+    <h2 class="counter" data-target="5">0</h2>
+    <p>Years Experience</p>
+  </div>
+</section>
+
+<section id="pricing" class="pricing">
+  <h2>Repair Pricing</h2>
+
+  <div class="pricing-toggle">
+    <button class="toggle-btn active" data-type="android">Android</button>
+    <button class="toggle-btn" data-type="iphone">iPhone</button>
+  </div>
+
+  <div class="pricing-container">
+    <!-- Pricing cards injected by JS -->
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+
+  <div class="contact-info">
+    <p><i class="fas fa-envelope"></i> Gmail: hornfix7@gmail.com</p>
+    <p><i class="fab fa-facebook"></i> Facebook: hornfix47</p>
+    <p><i class="fab fa-instagram"></i> Instagram: hornfix47</p>
+      <p><i class="fab fa-whatsapp"></i> +252 62 34717447</p>
+  </div>
+
+  <h3>Book Repair</h3>
+  <form id="repairForm">
+    <input type="text" id="name" placeholder="Full Name">
+    <input type="tel" id="phone" placeholder="Phone Number">
+    <select id="device">
+      <option value="">Select Device</option>
+      <option>iPhone</option>
+      <option>Samsung</option>
+      <option>Other</option>
+    </select>
+    <textarea id="issue" placeholder="Describe Issue"></textarea>
+    <button type="submit" class="btn primary">Submit</button>
+  </form>
+</section>
+
+<section class="testimonials">
+    <span class="tag">HORNFIX MOBILE REPAIR</span>
+    <h2>Our trusted clients</h2>
+
+    <div class="slider-wrapper">
+        <button class="nav prev">❮</button>
+
+        <div class="testimonial-container" id="testimonialContainer">
+            <!-- Testimonial Cards -->
+          <div class="testimonial-card">
+                <p class="quote">
+                    “HornFix repaired my iPhone screen in less than 30 minutes. 
+                    Very professional and affordable service!”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=32">
+                    <div>
+                        <h4>Ayaan Hassan</h4>
+                        <span>iPhone 13 Screen Repair</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="testimonial-card">
+                <p class="quote">
+                    “My Samsung was not charging. They fixed the charging port the same day.
+                    Highly recommended!”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=12">
+                    <div>
+                        <h4>Mohamed Farah</h4>
+                        <span>Samsung Charging Port</span>
+                    </div>
+                </div>
+            </div>
+
+             <div class="testimonial-card">
+                <p class="quote">
+                    “Excellent customer service and original spare parts.
+                    My phone works like new again.”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=47">
+                    <div>
+                        <h4>Hodan Ali</h4>
+                        <span>Battery Replacement</span>
+                    </div>
+                </div>
+            </div>
+    <!-- Client 4 -->
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Very honest technicians. They diagnosed the issue for free 
+                    before repairing it.”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=44">
+                    <div>
+                        <h4>Sahra Mohamed</h4>
+                        <span>Water Damage Repair</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 5 -->
+            <div class="testimonial-card">
+                <p class="quote">
+                    “Fast service and fair pricing. Best mobile repair shop in town!”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=15">
+                    <div>
+                        <h4>Abdirahman Nur</h4>
+                        <span>Phone Unlocking</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Client 6 -->
+            <div class="testimonial-card">
+                <p class="quote">
+                    “They fixed my cracked screen perfectly. 
+                    I will definitely come back again.”
+                </p>
+                <div class="user">
+                    <img src="https://i.pravatar.cc/60?img=20">
+                    <div>
+                        <h4>Fatuma Abdi</h4>
+                        <span>Screen Replacement</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <button class="nav next">❯</button>
+    </div>
+</section>
+
+
+
+<footer>
+  <p>© 2026 HornFix. All Rights Reserved.</p>
+  <button id="topBtn">Top</button>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
